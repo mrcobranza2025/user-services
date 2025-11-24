@@ -4,7 +4,6 @@ from firebase_admin import credentials, auth
 from fastapi import HTTPException, Header
 import json
 
-
 def _ensure_firebase_initialized():
     """Initialize Firebase Admin using env variable FIREBASE_SERVICE_ACCOUNT_JSON."""
     try:
