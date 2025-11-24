@@ -1,7 +1,8 @@
-from firebase_admin import firestore as firestore_admin
+from google.cloud import firestore
+
 class FirestoreService:
     def __init__(self):
-        self.db = firestore_admin.Client()
+        self.db = firestore.Client()
 
     def get_all(self, collection: str):
         docs = self.db.collection(collection).stream()
