@@ -19,9 +19,10 @@ This example starts up a [FastAPI](https://fastapi.tiangolo.com/) server.
 - Python 3
 
 ## 💁‍♀️ How to use
-
-- Clone locally and install packages with pip using `pip install -r requirements.txt`
-- Run locally using `hypercorn main:app --reload`
+- Create virtual env with `virtualenv venv -p 3`
+- Activate virtual env with `source venv/bin/activate`
+- Install packages with pip using `pip install -r requirements.txt`
+- Run locally using `hypercorn src.main:app`
 
 ## 📝 Notes
 
